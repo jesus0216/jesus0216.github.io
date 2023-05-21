@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pagina web</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+    <button id="cambiofondo" onclick="cambiarFondoDocumento()">cambiar fondo</button>
+    <button id="regresarBtn" onclick="regresaFondoDocumento()">Regresar fondo</button>
+    <script> function cambiarFondoDocumento(){
+        let body = document.getElementsByTagName('body')[0];
+        body.style.backgroundColor = '#DEB887';} 
+    
+        
+        
+        
+function regresaFondoDocumento(){
+    let body = document.getElementsByTagName('body')[0];
+    body.style.backgroundColor = '#DCDCDC';
+}
+        </script>
+<center>
+    <div>
+        <p id="midiv"><H1>WORLD OF WARCRAFT</H1></p>
+        <img src="imgan/Wow-Franchise-Logo-780x439.jpg" alt="haz el amor no el warcraft">
+    </div>
+<div>
+
+    <p> <h3> <H2>¿Que es World of Warcarft?</H2> 
+        <h2 id = "titulo" >Es un videojuego de rol multijugador masivo en línea desarrollado por Blizzard Entertainment.
+            Es el cuarto juego lanzado establecido en el universo fantástico de Warcraft, 
+            el cual fue introducido por primera vez por Warcraft: Orcs & Humans en 1994.</h2></h3></p>
+
+        <center><button id="boton">Cambiar texto</button></center>
+
+
+        <script>
+            function cambiar(){
+                document.getElementById("titulo").innerHTML = "Haz el amor no Warcraft";
+            }
+            document.getElementById("boton").onclick = function(){
+                cambiar();
+            }
+
+            
+    
+        </script>
+    
+</div>
+        <style>
+            .oculto{
+                display: none;
+            }
+        </style>
+<div>
+    <h2 id="mensaje">Hola mundo</h2>
+    <button id="mensaje" onclick="OcultarMensaje()">Ocultar mensaje</button>
+    <button id="mensaje" onclick="MostrarMensaje()">Mostrar mensaje</button> 
+
+</div>
+        
+        <script>
+
+function OcultarMensaje(mensaje) { 
+    document.getElementById('mensaje').style.display = 'none';
+        }
+        function MostrarMensaje(mensaje) {
+            document.getElementById('mensaje').style.display = 'block';
+        }
+
+
+        </script>
+        
+
+    <div>
+
+        <img id="imagen" src="imgan/world-of-warcraft-ilustracion-ñoño.webp" alt="wow" width="350px">
+
+    <center><button  onclick="cambiarImagen()">cambiar imagen</button>
+        <button  onclick="regresarImagen()">regresar imagen</button></center> 
+        <script> 
+            
+            function cambiarImagen(){
+                document.getElementById('imagen').src = "imgan/Wow-Franchise-Logo-780x439.jpg";
+            }
+            function regresarImagen(){
+                document.getElementById('imagen').src = "imgan/world-of-warcraft-ilustracion-ñoño.webp";
+            }
+            
+        </script>
+        
+    </div>
+
+
+    <div>
+        <table id="tabla">
+            <tr>
+                <th>
+                
+                </th>
+                <th>
+                
+                </th>
+            </tr>
+        </table>
+        <button onclick="agregarElemento()">Generar un Texto</button>
+
+    </div>
+
+    
+    <script> src="script.js"
+        function cambiarTexto() {
+            document.getElementById("text").innerHTML = "soy bot";
+        }
+
+    </script>
+
+    <script>
+        
+        function cambiarAtributo() {
+            document.getElementById("imagen").src = "chiwi.jpg";
+        }
+        
+    </script>
+
+    <script>
+        function agregarElemento() {
+            var numero = Math.floor(Math.random() * (18 - 15) + 15);
+            document.getElementById("tabla").innerHTML +=
+            "<tr><td><h2>Este Texto no lo escribio Jesus Diaz lo escribio JavaScript</h2></td><td>"+"</td></tr>";
+        }
+    </script>
+    </center>
+</body>
+
+</html>
